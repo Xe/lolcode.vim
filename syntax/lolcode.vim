@@ -12,7 +12,7 @@ endif
 syn region LolMultiComment start=/OBTW/ end=/TLDR/
 syn match LolLineComment 'BTW.*$'
 syn keyword LolOperator
-			\ SUM DIFF PRODUKT QUOSHUNT MOD BIGGR SMALLR BOTH EITHER WON NOT ALL ANY OF AN SAEM DIFFRINT WTF? OMG OMGWTF GTFO
+			\ AN WTF? OMG OMGWTF GTFO
 syn keyword LolKeyword
 			\ R ITZ OIC IS NOW A MAEK MEBBE YR PLZ
 syn keyword LolVarDec
@@ -26,6 +26,7 @@ syn match LolBlock "O RLY?"
 syn match LolBlock "YA RLY"
 syn match LolBlock "NO WAI"
 syn match LolBlock "FOUND YR"
+syn match LolBlock "FOUND UR"
 syn match LolBlock "HOW DUZ I"
 syn match LolBlock "IF U SAY SO"
 syn match LolBlock "AWSUM THX"
@@ -45,26 +46,32 @@ syn match LolRepeat "IM IN YR "
 syn match LolRepeat "IM OUTTA YR "
 syn keyword LolBaseFunc
 			\ VISIBLE INVISIBLE GIMMEH
-syn match LolIT "IT"
+syn match LolIT " IT "
+syn keyword LolMath
+			\ SUM DIFF PRODUKT QUOSHUNT MOD UPPIN NERFIN LOLG POWR 
+syn keyword LolComparator
+			\ BIGGR SMALLR BOTH EITHER WON NOT ALL OF ANY SAEM DIFFRINT
 
 """ Defining highlighting ---
 command -nargs=+ HiLink hi link <args>
 
 HiLink LolMultiComment Comment
 HiLink LolLineComment Comment
-HiLink LolOperator Operator
+HiLink LolOperator Title
 HiLink LolKeyword Statement
 HiLink LolEscapedChar SpecialChar
 HiLink LolBool Boolean
 HiLink LolNum Number
 HiLink LolString String
 HiLink LolInclude Include
-HiLink LolRepeat Repeat
+HiLink LolRepeat Delimiter
 HiLink LolBaseFunc Function
 HiLink LolSpecChar Special
 HiLink LolVarDec StorageClass
-HiLink LolBlock Define
+HiLink LolBlock Type
 HiLink LolIT Special
+HiLink LolMath PreProc
+HiLink LolComparator Title
 
 delcommand HiLink
 
