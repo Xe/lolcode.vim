@@ -38,8 +38,8 @@ syn match LolBlock "KTHXBYE"
 syn keyword LolType
 			\ TROOF YARN NUMBR NUMBAR NOOB
 syn keyword LolBool WIN FAIL
-syn match LolNum '[+-]\?\d\+'
-syn match LolNum '[+-]\?\d\+\.\d*'
+syn match LolNum '[^A-Za-z_][+-]\?\d\+'
+syn match LolNum '[^A-Za-z_][+-]\?\d\+\.\d*'
 syn match LolString '".*"'
 syn match LolInclude "CAN HAS [A-Za-z]\+?"
 syn match LolRepeat "IM IN YR "
