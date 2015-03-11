@@ -1,6 +1,6 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 """"" LANGUAGE:		LOLCODE
-""""" AUTHOR:		ThÃ©ophile BASTIAN, Sam Dodrill
+""""" AUTHOR:		ThÃ©ophile BASTIAN, Christine Dodrill
 """"" LAST CHANGE:	2013 Nov 14
 """"" LICENSE:		GNU GPLv3
 """"" SYNTAX HIGHLIGHTING FOR VIM!!1
